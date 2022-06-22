@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.header__img{
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    position: relative;
+}
+
+.menu__link{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #ba9813;
+    border: 2px solid white;
+    padding: 1.2rem;
+    transition: all 1s;
+}
+
+.submenu{
+    list-style: none;
+    display: none;
+    position: absolute;
+    padding-left: 23px;
+}
+
+.submenu__link{
+    text-decoration: none;
+    font-size: 1 rem;
+    padding: 1 rem;
+    color: #ba9813;
+    background-color: whitesmoke;
+}
+
+.menu__item:hover .submenu{
+    display: block;
+}
+
+.submenu__item{
+    padding: 1rem 0;
+}
+
+/* Home */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 860px;
+    background-image: url("../img/hosein-shirvani-scFNqafA5zM-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: auto;
+}
+
+.letras_img{
+    height: auto;
+}
+
+.caja_equipo{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    max-height:auto;
+    background-repeat: no-repeat;
+
+}
+
+.carta_equipo {
+    display: flex;
+    margin-top: 60px;
+    align-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    justify-items: center;
+    background-size: contain;
+} 
+
+.box__title {
+    font-size: 2.5em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    
+}
+
+.box__subtitle {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+    color: #ba9813;
+    text-align: center;
+    
+}
+
+.team{
+    height: 50%;
+
+}
+
+.box__info {
+    padding: 1.5rem;
+    text-align: center;
+    
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 3.5rem;
+    gap: 20px;
+}
+
+.info__title {
+    font-size: 5em;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+
+.pie-pagina{
+    background-color: #ba9813;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.pie-pagina .grupo_1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo_1 .pie_caja figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo_1 .pie_caja figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo_1 .pie_caja h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.pie-pagina .grupo_1 .pie_caja p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.pie_caja .red_social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 8px;
+    background-color: #c7a417;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie_caja .red_social a:hover{
+    color: black;
+    
+}
+
+.pie-pagina .grupo_2{
+    background-color: #ffffff;
+    padding: 15px 10px;
+    text-align: center;
+    color: #ba9813;
+}
+
+/*Sobre Nosotros*/
+
+.box__nosotros{
+    height: 600px;
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nosotros__info{
+    width: 50%;
+    background-color: #ba9913b9;
+    padding: auto;
+    text-align: left;
+}
+
+.nosotros__info .h1{
+    text-align: left;
+    font-size: 1rem;
+}
+
+.nosotros__info .h1 .p{
+    text-align: left;
+    font-size: 1rem;
+}
+
+.sobre__nosotros{
+    padding-top: 0%;
+    padding-left: 100%;
+    
+}
+.sobre__nosotros .img{
+    align-items: initial;
+}
+
+/* Servicios */
+
+.galeria{
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.galeria__img{
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    max-width: 300px;
+    opacity: 40%;
+}
+
+.galeria__img:hover{
+    opacity: 100%;
+}
+
+
+
+
+
